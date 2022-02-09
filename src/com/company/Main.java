@@ -11,10 +11,9 @@ public class Main {
     public static void main(String[] args) {
 
         BufferedImage image;
-        File file;
         char[][] tab ;
         try {
-            image = ImageIO.read(new File("img.jpg"));
+            image = ImageIO.read(new File("img2.jpg"));
             int width = image.getWidth();
             int height = image.getHeight();
             tab = new char[height][width];
@@ -38,7 +37,7 @@ public class Main {
             }
             for(int i=0; i<tab.length;i++){
                 for(int j=0; j<tab[0].length; j++){
-                    System.out.print(tab[i][j]);
+                    System.out.print(tab[i][j]+" ");
                 }
                 System.out.println();
             }
